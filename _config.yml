@@ -15,9 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Igor Konovalov
 email: konovalov.avp@gmail.com
-description: Personal site of Javascript programmer. My name is Igor Konovalov,
-             I've started to learn Javascript and programming in general in 2016.
-             This is my personal site where I post my projects and (hopefully) blog posts.
+description: Russia, Saint Petersburg. Novice programmer. Core skills - HTML, CSS, Javascript, Node JS. Personal blog and portfolio.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
