@@ -20,7 +20,11 @@ description: Russia, Saint Petersburg. Novice programmer. Core skills - HTML, CS
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: igor_dlinni
-github_username:  IgorKonovalov
+github_username: IgorKonovalov
+
+disquss:
+  shortname: igorkonovalov-github-io
+
 
 # Build settings
 markdown: kramdown
