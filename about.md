@@ -4,14 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Better leave it these way for now.
+![photo_about]({{ site.url }}/assets/IMG/about/about_photo.jpg){:style="width: 33%; float: left; margin: 0 10px 0 0;"}
+Hello everyone! My name is Igor Konovalov - I'm a novice javascript developer. Welcome to my personal site.
+I'm curios about programming since childhood, how to implement programming in life and art. Currently I live in Russia, Saint Petersburg.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+[Instagram](https://www.instagram.com/some_strange/)
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jekyll" %} /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+[Russian blog](http://igor-dlinni.livejournal.com)

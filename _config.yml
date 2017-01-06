@@ -22,6 +22,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: igor_dlinni
 github_username: IgorKonovalov
 
+google_analytics: UA-89901015-1
+
 disquss:
   shortname: igorkonovalov-github-io
 
@@ -31,6 +33,7 @@ markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
+  - jekyll-archives
 exclude:
   - Gemfile
   - Gemfile.lock

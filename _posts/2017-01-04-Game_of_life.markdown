@@ -26,6 +26,7 @@ Click on Randomize button, then Start, relax and watch magic.
 <input type="text" id="speed" value="10">
 <button id="start">Start</button>
 <button id="pause">Pause</button>
+<button id="clear">Clear</button>
 
 <script src="{{ site.url }}/assets/JS/Game_of_Life/index.js"></script>
 
