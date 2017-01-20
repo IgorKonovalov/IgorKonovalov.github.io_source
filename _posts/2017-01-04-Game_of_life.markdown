@@ -27,7 +27,6 @@ Click on Randomize button, then Start, relax and watch magic.
 <button id="start">Start</button>
 <button id="pause">Pause</button>
 <button id="clear">Clear</button>
-
 <script src="{{ site.url }}/assets/JS/Game_of_Life/index.js"></script>
 
 There is a lot written about this particular game - start from [wikipedia][GOL_WIKI] and move on.
