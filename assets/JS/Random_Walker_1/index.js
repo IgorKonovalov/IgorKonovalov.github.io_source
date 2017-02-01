@@ -3,22 +3,22 @@ const cx = canvas.getContext("2d");
 
 
 function randomStep() {
-  let random = randomNumber(0,4);
+  let random = randomInteger(1,4);
   let step = {};
   switch(random) {
-    case 0:
+    case 1:
       step.x = 1;
       step.y = 0;
       break;
-    case 1:
+    case 2:
       step.x = 0;
       step.y = 1;
       break;
-    case 2:
+    case 3:
       step.x = -1;
       step.y = 0;
       break;
-    case 3:
+    case 4:
       step.x = 0;
       step.y = -1;
       break;
@@ -26,8 +26,8 @@ function randomStep() {
   return step;
 }
 
-function randomNumber(min, max) {
-  return Math.floor((max-min) * Math.random());
+function randomInteger(min, max) {
+  return Math.round(min - 0.5 + Math.random() * (max - min + 1));
 }
 
 function getRandomColor() {

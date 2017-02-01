@@ -10,7 +10,7 @@ Just a very simple implementation of random walker on canvas in pure JS.
 
 Inspired by magnificent Daniel Shiffman - [take a look at this video][video]
 
-<canvas width="500px" height="500px" style="background-color: black"></canvas>
+<canvas width="780px" height="600px" style="background-color: black"></canvas>
 <script src="{{ site.url }}/assets/JS/Random_Walker_1/index.js"></script>
 
 [Source code][source]
