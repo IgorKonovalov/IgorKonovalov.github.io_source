@@ -12,12 +12,6 @@ For couple of days I wasn't eating and sleeping and just programming this thing 
 
 Click on Randomize button, then Start, relax and watch magic.  
 
-<style>
-  button {
-    margin: 3px;
-    font-size: 14px;
-  }
-</style>
 <canvas id="game" width="740px" height="600px" style="background-color: lightgray"></canvas>
 <br>
 <button id="random" style="margin-left: 0px;">Randomize</button>

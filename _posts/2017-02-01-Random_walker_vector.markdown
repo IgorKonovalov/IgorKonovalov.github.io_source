@@ -9,11 +9,17 @@ comments: true
 Hey everyone! After yesterday attempt to code random walker, I thought it would be a good idea to implement almost same thing but with vector object. As far as I know it's common practice to use vectors to describe coordinates and speed of objects - and it turns to be a good idea in this little do-it-after-came-back-from-work project. Previous version of random walker is [here][RW1]
 
 Take a look at it first, some explanation below:
-
-<canvas width="780px" height="600px" style="background-color: black"></canvas>
+<canvas width="740px" height="600px" style="background-color: black"></canvas>
 <button id="stopB">Stop</button>
 <script src="{{ site.url }}/assets/JS/Random_Walker_2/index.js"></script>
 
+<style>
+  @media screen and (max-width: 600px) {
+    canvas {
+      width: 340px;
+      }
+  }
+</style>
 
 Code for vector object is pretty simple - it describes coordinates on canvas:
 {% highlight javascript %}

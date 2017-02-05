@@ -1,5 +1,7 @@
 const canvas = document.querySelector("canvas");
 const cx = canvas.getContext("2d");
+const width = canvas.width;
+const height = canvas.height;
 
 function Vector(x, y) {
   this.x = x;
@@ -39,7 +41,7 @@ function randomSign() {
     return 1;
 }
 
-let centerV = new Vector(canvas.width / 2, canvas.height / 2);
+let centerV = new Vector(width / 2, height / 2);
 
 cx.strokeStyle="white";
 
@@ -52,9 +54,9 @@ function draw() {
   }
   cx.beginPath();
   cx.moveTo(centerV.x, centerV.y);
-  if (centerV.x > canvas.width) {centerV.x += -100;}
+  if (centerV.x > width) {centerV.x += -100;}
   if (centerV.x < 0) {center.x += 100;}
-  if (centerV.y > canvas.height) {centerV.y += -100;}
+  if (centerV.y > height) {centerV.y += -100;}
   if (centerV.y < 0) {centerV.y += 100;}
   let newCenter = centerV.plus(rVector.random(length));
   cx.lineTo(newCenter.x, newCenter.y);
