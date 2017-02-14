@@ -41,7 +41,7 @@ Source code, as always on my github: [SOURCE][SOURCE]
   <select id="selectFirstRow">
   </select>
   <button id="clear">Clear</button>
-  <button id="startPause">Start</button>
+  <button id="startPause" class="button-primary">Start</button>
   <br />
   <br />
   Select cell color:

@@ -35,6 +35,12 @@ $on-laptop:        800px !default;
   }
 }
 
+// MY STYLE
+
+.floatRight {
+  float: right;
+}
+
 // Import partials.
 @import
   "minima/base",
