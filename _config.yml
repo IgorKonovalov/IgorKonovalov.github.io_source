@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Igor Konovalov
 email: konovalov.avp@gmail.com
-description: Russia, Saint Petersburg. Novice programmer. Core skills - HTML, CSS, Javascript, Node JS. Personal blog and portfolio.
+description: Russia, Saint Petersburg. Passionate WebDeveloper. Core skills - HTML, CSS, Javascript, Node JS. Personal blog and portfolio.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

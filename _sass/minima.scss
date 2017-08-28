@@ -35,7 +35,10 @@ $on-laptop:        800px !default;
   }
 }
 
-// MY STYLE
+// MY STYLES
+#nav-trigger {
+  display: none;
+}
 
 .floatRight {
   float: right;
