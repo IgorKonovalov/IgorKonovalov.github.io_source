@@ -18,7 +18,14 @@ The Rose itself is red and "Maurer" part is blue. A Maurer rose of the rose r = 
 
 Experiments with rose and her Maurer part can be very interesting.
 
-I suggest for you to try: [n: 0.01, d: 8.16, maurer: 21],[n: 2, d: 1, maurer: 71],[n: 2, d: 5, maurer: 56],[n: 7, d: 1, maurer: 29],[n: 5, d: 2, maurer: 66], and so on
+I suggest for you to try: 
+[n: 0.01, d: 8.16, maurer: 21],
+[n: 2, d: 1, maurer: 71],
+[n: 2, d: 5, maurer: 56],
+[n: 7, d: 1, maurer: 29],
+[n: 5, d: 2, maurer: 66], and so on
+
+NB! [New and all inproved version](https://codepen.io/Igor_Konovalov/full/ZJwPQv/)
 
 Possibilities are infinite, have fun! Source code - on my [GitHub][Rose_source]
 
