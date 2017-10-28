@@ -8,7 +8,7 @@ comments: true
 
 Arduino is a cool thing - people making all kinds of interesting stufff with it - from robots to synthesizers and so on. It happened that friend of mine gave me one to play with. After some experiments and googling I've made a connection between Arduino and webpage. It was really easy, and below is my little tutorial on how to make such thing. Hope you'll find it useful and will make something bigger from it. 
 
-You can download source code here: https://github.com/IgorKonovalov/Arduino_to_Node
+You can download [source code here:](https://github.com/IgorKonovalov/Arduino_to_Node)
 
 In this tutorial you will learn how to connect data from potentiometer on Arduino, transfer in through serial port to Node server and then connect in to the webpage through Socket IO - so webpage will know about changes on potentiometer and reacted accordingly
 
@@ -228,6 +228,6 @@ Once we recieved event on browser side we simply setting background attribute fo
 And now, if everything is works as intended - we can change potentiometer value on Arduino and these will change background of our page. Isn't it cool? There is a thousands possibilities to play with this thing, enjoy!
 
 Thank you for reading! 
-Check source code for a tutorial https://github.com/IgorKonovalov/Arduino_to_Node
+Check [source code for a tutorial](https://github.com/IgorKonovalov/Arduino_to_Node)
 
 Please leave a comment below - What ideas you came up with? Should I make more tutorials like these one? What kind of?
