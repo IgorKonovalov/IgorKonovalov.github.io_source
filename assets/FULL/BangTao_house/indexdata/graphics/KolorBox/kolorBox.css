@@ -1,0 +1,299 @@
+div.kolorBoxContainer
+{
+	position: relative;
+}
+
+div.kolorBox
+{
+	position: absolute;
+	z-index: 1;
+	background-color: #1c94c4;
+	overflow: hidden;
+}
+
+div.kolorBoxHeader
+{
+    height: 75px;
+    overflow: auto;
+}
+
+div.kolorBoxBodyLeft
+{
+    float: left;
+    width: 241px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+div.kolorBoxBodyCenter
+{
+    position: relative;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    /*z-index: 0;*/
+}
+div.kolorBoxBodyCenter.loading
+{
+    background: url(images/sablier.png) no-repeat center center;
+}
+div.kolorBoxBodyCenter p.kolorBoxBodyCenterLeftArrow
+{
+   position: absolute;
+   left: 0;
+   display: none;
+   background: url(images/btn_previous.png) no-repeat;
+   width: 32px;
+   height: 32px;
+   /*z-index: 100;*/
+}
+
+div.kolorBoxBodyCenter p.kolorBoxBodyCenterRightArrow
+{
+   position: absolute;
+   right: 0;
+   display: none;
+   background: url(images/btn_next.png) no-repeat;
+   width: 32px;
+   height: 32px;
+   /*z-index: 100;*/
+}
+
+div.kolorBoxBodyRight
+{
+    float: left;
+    width: 241px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+
+div.kolorBoxFooter
+{
+    clear: both;
+    height: 75px;
+    overflow: auto;
+}
+
+
+/*
+div.kolorBoxTextContent
+{
+	display: block;
+	float:left;
+}
+*/
+
+p.kolorBoxTitle
+{
+	margin: auto;
+	padding: 0;
+	/*min-width: 240px;*/
+  line-height: 32px;
+  text-align: center;
+
+  /* fix title size add */
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 80%;
+  height: 32px;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+
+p.kolorBoxCaption
+{
+	margin: 0;
+	padding: 0;
+    overflow: auto;
+    height: 100%;
+}
+
+
+/* ----------------------------------
+	Overlay
+----------------------------------- */
+
+div.kolorBoxOverlay
+{
+	position: absolute;
+	z-index: 0;
+	opacity: 1;
+	background-color: #000;
+	width: 0px;
+	height: 0px;
+}
+
+/* ----------------------------------
+	Navigation
+----------------------------------- */
+
+div.kolorBoxTopUIBar,
+div.kolorBoxBottomUIBar
+{
+    position: relative;
+    clear: both;
+    width: 100%;
+    height: 32px;
+}
+
+div.leftUIPlaceHolder
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    height: 32px;
+    overflow: hidden;
+}
+
+div.centerUIPlaceHolder
+{
+    margin: auto;
+    width: 0px;
+    height: 32px;
+    overflow: hidden;
+}
+
+div.rightUIPlaceHolder
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 32px;
+    overflow: hidden;
+}
+
+
+div.kolorBoxNavigation
+{
+	height: 32px;
+	width: 124px;
+    float: left;
+}
+
+span.counterSpan
+{
+	display: block;
+	float: left;
+    width: 60px;
+	height: 32px;
+	line-height: 32px;
+	color: #666;
+	font-family: Verdana, sans-serif;
+    text-align: center;
+}
+
+a.playPauseBtn,
+a.previousBtn,
+a.nextBtn,
+a.closeBtn,
+a.fullscreenBtn
+{
+	display: block;
+	float: left;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	text-indent: -9999px;
+	cursor: pointer;
+	background-position: top;	
+}
+
+a.playPauseBtn:hover,
+a.previousBtn:hover,
+a.nextBtn:hover,
+a.closeBtn:hover,
+a.fullscreenBtn:hover
+{
+	background-position: bottom;	
+}
+
+a.previousBtn
+{
+	background: url(images/btn_previous.png) no-repeat;
+}
+
+a.nextBtn
+{
+	background: url(images/btn_next.png) no-repeat;
+}
+
+a.playBtn
+{
+	background: url(images/btn_play.png) no-repeat;
+}
+
+a.pauseBtn
+{
+	background: url(images/btn_pause.png) no-repeat;
+}
+
+a.closeBtn
+{
+	background: url(images/btn_close.png) no-repeat;
+}
+
+a.enterFullscreenBtn
+{
+	background: url(images/btn_fullscreen.png) no-repeat;
+}
+
+a.exitFullscreenBtn
+{
+	background: url(images/btn_fullscreen_exit.png) no-repeat;
+}
+
+/* ----------------------------------
+	Social buttons
+----------------------------------- */
+
+a.socialButton
+{
+	display:block;
+	float:left;
+	text-indent: -99999px;
+	width:64px;
+	height:64px;
+	overflow: hidden;
+	margin:5px;
+    cursor: pointer;
+}
+
+a.socialButton:hover
+{
+	background-position: bottom;
+}
+
+a.socialFacebook
+{
+	background: url("images/social_facebook.png") top;
+}
+
+a.socialTwitter
+{
+	background: url("images/social_twitter.png") top;
+}
+
+a.socialGoogle
+{
+	background: url("images/social_google.png") top;
+}
+
+a.socialLinkedin
+{
+	background: url("images/social_linkedin.png") top;
+}
+
+a.socialDigg
+{
+	background: url("images/social_digg.png") top;
+}
+
+a.socialMail
+{
+	background: url("images/social_mail.png") top;
+}

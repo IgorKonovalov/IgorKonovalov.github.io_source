@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<krpano>
+
+<!-- ************************ -->
+<!--         Messages         -->
+<!-- ************************ -->
+
+  <data name="en_project_title"><![CDATA[Дом в Банг Тао, Пхукет, Таиланд]]></data>
+  <data name="en_project_author_name"><![CDATA[Студия Панорамной фотографии 360-Virtualtour]]></data>
+  <data name="en_project_author_url"><![CDATA[http://360-virtualtour.net]]></data>
+
+
+
+  <data name="en_pano475_title"><![CDATA[Двор]]></data>
+  <data name="en_spotpoint477_tooltip"><![CDATA[Пройти в дом]]></data>
+  <data name="en_spotpoint478_tooltip"><![CDATA[Второй этаж]]></data>
+
+
+  <data name="en_pano381_title"><![CDATA[Гостиная]]></data>
+  <data name="en_spotpoint417_tooltip"><![CDATA[Кухня]]></data>
+  <data name="en_spotpoint418_tooltip"><![CDATA[Ванная]]></data>
+  <data name="en_spotpoint419_tooltip"><![CDATA[Спальня]]></data>
+  <data name="en_spotpoint420_tooltip"><![CDATA[Второй этаж]]></data>
+  <data name="en_spotpoint479_tooltip"><![CDATA[Выйти во Двор]]></data>
+
+
+  <data name="en_pano380_title"><![CDATA[Кухня]]></data>
+
+
+  <data name="en_pano382_title"><![CDATA[Первый этаж, спальня]]></data>
+
+
+  <data name="en_pano383_title"><![CDATA[Первый этаж, ванная]]></data>
+  <data name="en_spotpoint423_tooltip"><![CDATA[Гостиная]]></data>
+  <data name="en_spotpoint424_tooltip"><![CDATA[Кухня]]></data>
+
+
+  <data name="en_pano384_title"><![CDATA[Второй этаж, зал]]></data>
+  <data name="en_spotpoint427_tooltip"><![CDATA[Балкон]]></data>
+
+
+  <data name="en_pano385_title"><![CDATA[Второй этаж, ванная]]></data>
+
+
+  <data name="en_pano387_title"><![CDATA[Второй этаж, спальня]]></data>
+  <data name="en_spotpoint480_tooltip"><![CDATA[Выйти во Двор]]></data>
+
+
+  <data name="en_pano494_title"><![CDATA[Балкон]]></data>
+  <data name="en_spotpoint496_tooltip"><![CDATA[Вернуться]]></data>
+
+
+
+
+
+
+  <data name="en_contextmenuopenFsLabel"><![CDATA[На Полный экран]]></data>
+  <data name="en_contextmenucloseFsLabel"><![CDATA[]]></data>
+  <data name="en_contextmenunormallabel"><![CDATA[Нормальный вид]]></data>
+  <data name="en_contextmenuarchitecturallabel"><![CDATA[Архитектурный вид]]></data>
+  <data name="en_contextmenulittleplanetlabel"><![CDATA[Маленькая планета]]></data>
+  <data name="en_prevnexttheme2prevSceneTip"><![CDATA[Previous Scene]]></data>
+  <data name="en_prevnexttheme2nextSceneTip"><![CDATA[Next Scene]]></data>
+  <data name="en_logowebsiteurl"><![CDATA[http://360-virtualtour.net/en]]></data>
+  <data name="en_logotooltipText"><![CDATA[Panoramic and Interior Photography]]></data>
+  <data name="en_controlBar_classiczoomInTip"><![CDATA[Приблизить]]></data>
+  <data name="en_controlBar_classiczoomOutTip"><![CDATA[Отдалить]]></data>
+  <data name="en_controlBar_classicopenFsTip"><![CDATA[На Полный Экран]]></data>
+  <data name="en_controlBar_classiccloseFsTip"><![CDATA[]]></data>
+  <data name="en_controlBar_classicautorotateOnTip"><![CDATA[Включить автовращение]]></data>
+  <data name="en_controlBar_classicautorotateOffTip"><![CDATA[Выключить автовращение]]></data>
+  <data name="en_controlBar_classicgyroOnTip"><![CDATA[Включить гироскоп]]></data>
+  <data name="en_controlBar_classicgyroOffTip"><![CDATA[Выключить гироскоп]]></data>
+  <data name="en_controlBar_classicshareTip"><![CDATA[Поделиться]]></data>
+  <data name="en_controlBar_classicdisplayHelpTip"><![CDATA[Помощь]]></data>
+  <data name="en_controlBar_classichideHelpTip"><![CDATA[Закрыть помощь]]></data>
+  <data name="en_controlBar_classicdisplayControlsTip"><![CDATA[Показать управление]]></data>
+  <data name="en_controlBar_classichideControlsTip"><![CDATA[Скрыть управление]]></data>
+  <data name="en_controlBar_classicctrlmodeDragTip"><![CDATA[Изменить способ управления]]></data>
+  <data name="en_controlBar_classicctrlmodeMoveTip"><![CDATA[Изменить способ управления]]></data>
+
+  <data name="en_project_description"><![CDATA[Любезно предоставленный нашим другом во временное пользование.&nbsp;]]></data>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</krpano>

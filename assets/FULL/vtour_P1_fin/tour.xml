@@ -1,0 +1,634 @@
+<krpano version="1.16" title="Вилла P1 - Таиланд, о. Пхукет" onstart="startup();">
+
+<include url="skin/vtourskin.xml" />
+
+	<!-- set skin settings: bingmaps? gyro? thumbnail controlling? tooltips? -->
+		<skin_settings bingmaps="false"
+	               bingmaps_key=""
+	               bingmaps_zoombuttons="false"
+	               gyro="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="true"
+	               thumbs_scrollindicator="true"
+	               tooltips_thumbs="true"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               controlbar_offset="20"
+	               />
+
+	<!-- set optional skin logo url -->
+	<layer name="skin_logo" url="" scale="0.25" opened_onclick="openurl('...',_blank);" />
+	
+	<autorotate enabled="true" waittime="1.5"  speed="3.0" devices="flash" />
+		
+	<textstyle name="hotspottextstyle"
+			   font="Arial"
+			   fontsize="14"
+			   bold="true"
+			   italic="true"
+			   background="true"
+			   backgroundcolor="0xEEEECC"
+			   border="true"
+			   bordercolor="0x777700"
+			   textcolor="0x333300"
+			   alpha="1.0"
+			   blendmode="normal"
+			   effect=""
+			   origin="cursor"
+			   edge="bottom"
+			   textalign="none"
+			   xoffset="0"
+			   yoffset="-3"
+	/>
+
+
+
+	<action name="startup">
+		if(startscene === null, copy(startscene,scene[0].name));
+		loadscene(get(startscene), null, MERGE);
+	</action>
+
+	
+	<scene name="scene_O_P1_1" title="Общий вид Виллы, Бассейн" onstart="" thumburl="panos/O_P1_1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-113.938" vlookat="-11.116" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_1.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_1.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_1.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_1.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_1.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-121.932" atv="2.871" linkedscene="scene_o_p1_2" onhover="showtext('Открытое Джакузи',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-85.632" atv="3.588" linkedscene="scene_o_p1_3" onhover="showtext('Жилое Пространство 1',hotspottextstyle);" />
+
+	</scene>
+
+	<scene name="scene_O_P1_2" title="Открытое Джакузи" onstart="" thumburl="panos/O_P1_2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-262.975" vlookat="32.008" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_2.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_2.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_2.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_2.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_2.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-170.295" atv="4.221" linkedscene="scene_o_p1_1" onhover="showtext('Общий вид Виллы, Бассейн',hotspottextstyle);" />
+
+	</scene>
+
+	<scene name="scene_O_P1_3" title="Жилое Пространство 1" onstart="" thumburl="panos/O_P1_3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-94.772" vlookat="6.722" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_3.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_3.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_3.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_3.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_3.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-106.903" atv="8.925" linkedscene="scene_o_p1_4" onhover="showtext('Жилое Пространство 2',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle_right" ath="-74.905" atv="-2.589" linkedscene="scene_o_p1_5" onhover="showtext('Кухня, Лестница на Нижний Уровень',hotspottextstyle);" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-73.572" atv="4.973" linkedscene="scene_o_p1_10" onhover="showtext('Спуститься на Нижний Уровень',hotspottextstyle);" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="66.306" atv="6.937" linkedscene="scene_o_p1_1" onhover="showtext('Общий вид Виллы, Бассейн',hotspottextstyle);" />
+
+	</scene>
+
+	<scene name="scene_O_P1_4" title="Жилое Пространство 2" onstart="" thumburl="panos/O_P1_4.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-165.045" vlookat="-2.158" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_4.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_4.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_4.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_4.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_4.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-62.624" atv="4.464" linkedscene="scene_o_p1_5" onhover="showtext('Кухня, Лестница на Нижний Уровень',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle_left" ath="-64.970" atv="10.476" linkedscene="scene_o_p1_10" onhover="showtext('Спуститься на Нижний Уровень',hotspottextstyle);" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-38.545" atv="-33.449" linkedscene="scene_o_p1_9" onhover="showtext('Комната Развлечений',hotspottextstyle);" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="2.298" atv="4.289" linkedscene="scene_o_p1_3" onhover="showtext('Жилое Пространство 1',hotspottextstyle);" />
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="-171.832" atv="15.072" linkedscene="scene_o_p1_21" onhover="showtext('Жилое Пространство 3',hotspottextstyle);" />
+		<hotspot name="spot6" style="skin_hotspotstyle" ath="-164.797" atv="3.338" linkedscene="scene_o_p1_7" onhover="showtext('Открытая Терраса',hotspottextstyle);" />
+		<hotspot name="spot7" style="skin_hotspotstyle" ath="-136.324" atv="2.872" linkedscene="scene_o_p1_8" onhover="showtext('Крытая Терраса ',hotspottextstyle);" />
+
+	</scene>
+	
+	<scene name="scene_O_P1_21" title="Жилое Пространство 3" onstart="" thumburl="panos/O_P1_21.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-102.617" vlookat="0.113" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_21.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_21.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_21.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_21.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_21.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="72.362" atv="9.007" linkedscene="scene_o_p1_4" onhover="showtext('Жилое Пространство 2',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle_left" ath="41.591" atv="2.249" linkedscene="scene_o_p1_5" onhover="showtext('Кухня, Лестница на Нижний Уровень',hotspottextstyle);" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-125.640" atv="4.728" linkedscene="scene_o_p1_7" onhover="showtext('Открытая Терраса',hotspottextstyle);" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-78.470" atv="4.108" linkedscene="scene_o_p1_8" onhover="showtext('Крытая Терраса ',hotspottextstyle);" />
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="-44.436" atv="10.673" linkedscene="scene_o_p1_6" onhover="showtext('Бильярдный Стол, Лестница на Верхний Уровень',hotspottextstyle);" />
+
+	</scene>
+
+	<scene name="scene_O_P1_5" title="Кухня, Лестница на Нижний Уровень" onstart="" thumburl="panos/O_P1_5.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-28.732" vlookat="3.563" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_5.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_5.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_5.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_5.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_5.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="138.724" atv="13.705" linkedscene="scene_o_p1_4" onhover="showtext('Жилое Пространство 2',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle_left" ath="75.831" atv="5.783" linkedscene="scene_o_p1_3" onhover="showtext('Жилое Пространство 1',hotspottextstyle);" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-149.243" atv="31.487" linkedscene="scene_o_p1_10" onhover="showtext('Спуститься на Нижний Уровень',hotspottextstyle);" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-137.162" atv="7.438" linkedscene="scene_o_p1_6" onhover="showtext('Бильярдный Стол, Лестница на Верхний Уровень',hotspottextstyle);" />
+
+	</scene>
+
+	<scene name="scene_O_P1_6" title="Бильярдный Стол, Лестница на Верхний Уровень" onstart="" thumburl="panos/O_P1_6.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_6.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_6.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_6.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_6.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_6.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-10.637" atv="4.269" linkedscene="scene_o_p1_8" onhover="showtext('Крытая Терраса ',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-72.535" atv="3.923" linkedscene="scene_o_p1_7" onhover="showtext('Открытая Терраса',hotspottextstyle);" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-138.295" atv="16.639" linkedscene="scene_o_p1_21" onhover="showtext('Жилое Пространство 3',hotspottextstyle);" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="142.478" atv="8.755" linkedscene="scene_o_p1_5" onhover="showtext('Кухня, Лестница на Нижний Уровень',hotspottextstyle);" />
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="152.686" atv="-14.952" linkedscene="scene_o_p1_9" onhover="showtext('Комната Развлечений',hotspottextstyle);" />
+
+	</scene>
+	
+
+
+	<scene name="scene_O_P1_7" title="Терраса (Открытая)" onstart="" thumburl="panos/O_P1_7.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-61.639" vlookat="0.968" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_7.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_7.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_7.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_7.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_7.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="80.931" atv="6.468" linkedscene="scene_o_p1_8" onhover="showtext('Крытая Терраса ',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-175.447" atv="4.397" linkedscene="scene_o_p1_21" onhover="showtext('Жилое Пространство 3',hotspottextstyle);" />
+		<hotspot name="spot3" style="skin_hotspotstyle_right" ath="130.688" atv="4.753" linkedscene="scene_o_p1_6" onhover="showtext('Бильярдный Стол, Лестница на Верхний Уровень',hotspottextstyle);" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="154.096" atv="4.002" linkedscene="scene_o_p1_5" onhover="showtext('Кухня, Лестница на Нижний Уровень',hotspottextstyle);" />
+
+	</scene>
+
+	<scene name="scene_O_P1_8" title="Терраса (Крытая)" onstart="" thumburl="panos/O_P1_8.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-153.379" vlookat="5.046" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_8.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_8.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_8.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_8.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_8.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-108.219" atv="6.604" linkedscene="scene_o_p1_7" onhover="showtext('Открытая Терраса',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-148.194" atv="3.387" linkedscene="scene_o_p1_21" onhover="showtext('Жилое Пространство 3',hotspottextstyle);" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="171.478" atv="7.290" linkedscene="scene_o_p1_6" onhover="showtext('Бильярдный Стол, Лестница на Верхний Уровень',hotspottextstyle);" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="178.785" atv="2.914" linkedscene="scene_o_p1_5" onhover="showtext('Кухня, Лестница на Нижний Уровень',hotspottextstyle);" />
+
+	</scene>
+
+	<scene name="scene_O_P1_9" title="Комната Развлечений" onstart="" thumburl="panos/O_P1_9.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-68.638" vlookat="29.612" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_9.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_9.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_9.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_9.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_9.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-179.932" atv="20.989" linkedscene="scene_o_p1_6" onhover="showtext('Бильярдный Стол, Лестница на Верхний Уровень',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="116.983" atv="39.499" linkedscene="scene_o_p1_4" onhover="showtext('Жилое Пространство 2',hotspottextstyle);" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="156.707" atv="21.885" linkedscene="scene_o_p1_21" onhover="showtext('Жилое Пространство 3',hotspottextstyle);" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="50.286" atv="35.516" linkedscene="scene_o_p1_3" onhover="showtext('Жилое Пространство 1',hotspottextstyle);" />
+
+	</scene>
+
+	<scene name="scene_O_P1_10" title="Коридор" onstart="" thumburl="panos/O_P1_10.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-42.849" vlookat="4.509" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_10.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_10.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_10.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_10.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_10.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="133.098" atv="-16.262" linkedscene="scene_o_p1_5" onhover="showtext('Подняться на Верхний Уровень',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-47.408" atv="-4.501" linkedscene="scene_o_p1_15" onhover="showtext('Спальня 2',hotspottextstyle);" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-137.694" atv="8.835" linkedscene="scene_o_p1_12" onhover="showtext('Спальня 3',hotspottextstyle);" />
+		<hotspot name="spot4" style="skin_hotspotstyle_left" ath="-164.151" atv="3.405" linkedscene="scene_o_p1_11" onhover="showtext('Спальня 4',hotspottextstyle);" />
+		<hotspot name="spot5" style="skin_hotspotstyle_left" ath="-164.194" atv="11.180" linkedscene="scene_o_p1_19" onhover="showtext('Ванная 4',hotspottextstyle);" />
+		<hotspot name="spot6" style="skin_hotspotstyle_left" ath="-144.662" atv="4.818" linkedscene="scene_o_p1_13" onhover="showtext('Ванная 3',hotspottextstyle);" />
+		<hotspot name="spot7" style="skin_hotspotstyle" ath="43.309" atv="7.323" linkedscene="scene_o_p1_18" onhover="showtext('Спальня 5',hotspottextstyle);" />
+		<hotspot name="spot8" style="skin_hotspotstyle_right" ath="-46.867" atv="1.474" linkedscene="scene_o_p1_17" onhover="showtext('Ванная 2 - Смежная',hotspottextstyle);" />
+		<hotspot name="spot9" style="skin_hotspotstyle_left" ath="-52.738" atv="4.676" linkedscene="scene_o_p1_20" onhover="showtext('Открытая Ванная',hotspottextstyle);" />
+		<hotspot name="spot10" style="skin_hotspotstyle_left" ath="-52.719" atv="-2.024" linkedscene="scene_o_p1_22" onhover="showtext('Спальня 1',hotspottextstyle);" />
+
+	</scene>
+	
+	<scene name="scene_O_P1_22" title="Спальня 1" onstart="" thumburl="panos/O_P1_22.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="64.614" vlookat="12.964" fovtype="MFOV" fov="120.000" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_22.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_22.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_22.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_22.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_22.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="7.605" atv="3.480" linkedscene="scene_o_p1_10" onhover="showtext('Коридор',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="163.578" atv="7.622" linkedscene="scene_o_p1_20" onhover="showtext('Открытая Ванная',hotspottextstyle);" />
+
+	</scene>
+	
+	<scene name="scene_O_P1_20" title="Открытая Ванная" onstart="" thumburl="panos/O_P1_20.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="60.658" vlookat="-1.481" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_20.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_20.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_20.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_20.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_20.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle_right" ath="64.375" atv="-1.272" linkedscene="scene_o_p1_10" onhover="showtext('Коридор',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle_right" ath="64.482" atv="6.846" linkedscene="scene_o_p1_22" onhover="showtext('Спальня 1',hotspottextstyle);" />
+
+	</scene>
+
+	
+	<scene name="scene_O_P1_15" title="Спальня 2" onstart="" thumburl="panos/O_P1_15.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="90.903" vlookat="9.964" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_15.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_15.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_15.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_15.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_15.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="115.881" atv="3.008" linkedscene="scene_o_p1_10" onhover="showtext('Коридор',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="88.355" atv="3.105" linkedscene="scene_o_p1_17" onhover="showtext('Ванная 2 - Смежная',hotspottextstyle);" />
+
+	</scene>
+	
+	<scene name="scene_O_P1_17" title="Ванная 2 (Смежная)" onstart="" thumburl="panos/O_P1_17.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-100.677" vlookat="0.803" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_17.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_17.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_17.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_17.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_17.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle_right" ath="30.534" atv="7.640" linkedscene="scene_o_p1_15" onhover="showtext('Спальня 2',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-75.764" atv="6.270" linkedscene="scene_o_p1_18" onhover="showtext('Спальня 5',hotspottextstyle);" />
+
+	</scene>
+	
+	<scene name="scene_O_P1_12" title="Спальня 3" onstart="" thumburl="panos/O_P1_12.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="57.982" vlookat="7.076" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_12.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_12.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_12.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_12.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_12.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="106.297" atv="5.763" linkedscene="scene_o_p1_10" onhover="showtext('Коридор',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-158.456" atv="5.664" linkedscene="scene_o_p1_13" onhover="showtext('Ванная 3',hotspottextstyle);" />
+
+	</scene>
+	
+	<scene name="scene_O_P1_13" title="Ванная 3" onstart="" thumburl="panos/O_P1_13.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-177.347" vlookat="10.254" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_13.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_13.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_13.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_13.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_13.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.661" atv="10.132" linkedscene="scene_o_p1_12" onhover="showtext('Спальня 3',hotspottextstyle);" />
+
+	</scene>
+	
+
+	<scene name="scene_O_P1_11" title="Спальня 4" onstart="" thumburl="panos/O_P1_11.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-186.438" vlookat="13.730" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_11.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_11.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_11.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_11.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_11.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-62.794" atv="-0.207" linkedscene="scene_o_p1_10" onhover="showtext('Коридор',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle_left" ath="-64.016" atv="6.611" linkedscene="scene_o_p1_19" onhover="showtext('Ванная 4',hotspottextstyle);" />
+
+	</scene>
+	
+	<scene name="scene_O_P1_19" title="Ванная 4" onstart="" thumburl="panos/O_P1_19.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-173.220" vlookat="3.945" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_19.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_19.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_19.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_19.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_19.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle_left" ath="-82.788" atv="-2.207" linkedscene="scene_o_p1_10" onhover="showtext('Коридор',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle_right" ath="-82.683" atv="6.841" linkedscene="scene_o_p1_11" onhover="showtext('Спальня 4',hotspottextstyle);" />
+
+	</scene>
+
+	<scene name="scene_O_P1_18" title="Спальня 5" onstart="" thumburl="panos/O_P1_18.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="68.136" vlookat="10.452" fovtype="MFOV" fov="120.000" maxpixelzoom="1.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/O_P1_18.tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3183" tiledimageheight="3183">
+				<cube url="panos/O_P1_18.tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/O_P1_18.tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/O_P1_18.tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/O_P1_18.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="117.083" atv="3.956" linkedscene="scene_o_p1_10" onhover="showtext('Коридор',hotspottextstyle);" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="140.717" atv="4.556" linkedscene="scene_o_p1_17" onhover="showtext('Ванная 2 - Смежная',hotspottextstyle);" />
+
+	</scene>
+
+	
+
+
+
+
+
+
+</krpano>
