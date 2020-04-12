@@ -21,26 +21,26 @@ Click on Randomize button, then Start, relax and watch magic.
 <button id="start" class="button-primary">Start</button>
 <button id="pause">Pause</button>
 <button id="clear">Clear</button>
-<script src="{{ site.url }}/assets/JS/Game_of_Life/index.js"></script>
+<script src="/assets/JS/Game_of_Life/index.js"></script>
 
 There is a lot written about this particular game - start from [wikipedia][GOL_WIKI] and move on.
 I suggest you try a few patterns (refresh page, click on canvas to change color, then start):
 
 DieHard:
 
-![DieHard]({{ site.url }}/assets/IMG/Game_of_Life/Game Of Life! - DieHard.png)
+![DieHard](/assets/IMG/Game_of_Life/Game Of Life! - DieHard.png)
 
 Pentadecathlon:
 
-![Pentadecathlon]({{ site.url }}/assets/IMG/Game_of_Life/Game Of Life! - Pentadecathlon.png)
+![Pentadecathlon](/assets/IMG/Game_of_Life/Game Of Life! - Pentadecathlon.png)
 
 Pulsar:
 
-![Pulsar]({{ site.url }}/assets/IMG/Game_of_Life/Game Of Life! - pulsar.png)
+![Pulsar](/assets/IMG/Game_of_Life/Game Of Life! - pulsar.png)
 
 Infinite:
 
-![infinite]({{ site.url }}/assets/IMG/Game_of_Life/Game Of Life! - infinite.png)
+![infinite](/assets/IMG/Game_of_Life/Game Of Life! - infinite.png)
 
 Have fun!
 

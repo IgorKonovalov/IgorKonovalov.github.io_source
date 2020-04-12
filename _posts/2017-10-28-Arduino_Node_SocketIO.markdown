@@ -14,7 +14,7 @@ In this tutorial you will learn how to connect data from potentiometer on Arduin
 
 Let's start with Arduino setup. I'm using nano but it shouldn't matter at all. Here is my wiring: 
 
-<img src="{{ site.url }}\assets\IMG\Arduino_node\arduino-socketio.png" alt="arduino-node-socketio tutorial arduino wiring">
+<img src="\assets\IMG\Arduino_node\arduino-socketio.png" alt="arduino-node-socketio tutorial arduino wiring">
 
 The code for arduino is dead simple: 
 

@@ -31,7 +31,7 @@ Source code, as always on my github: [SOURCE][SOURCE]
 </style>
 
 
-<script src="{{ site.url }}/assets/JS/Cellular_automation/rules.js"></script>
+<script src="/assets/JS/Cellular_automation/rules.js"></script>
 
 <canvas id="automata" width="740px" height="600px" style="background-color: black"></canvas>
   Select rule:
@@ -51,7 +51,7 @@ Source code, as always on my github: [SOURCE][SOURCE]
   Psychedelic mode:
   <input type="checkbox" id="psychedelic" value="on">ON<Br>
 
-<script src="{{ site.url }}/assets/JS/Cellular_automation/index.js"></script>
+<script src="/assets/JS/Cellular_automation/index.js"></script>
 
 
 [SOURCE]: https://github.com/IgorKonovalov/Little_projects/tree/master/Cellular_Automata

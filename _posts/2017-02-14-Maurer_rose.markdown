@@ -12,7 +12,7 @@ Good place to start for you to experiments with rose is this chart:
 
 <i>Mathematical "rose" or "rhodonea" curves, based on the polar-coordinates equation r=cos(θ*n/d). In this chart, the values of parameter n varies from 1 to 7, while d varies from 1 to 9.</i>
 
-<img src="{{ site.url }}/assets/JS/Maurer_rose/Rose-rhodonea-curve-7x9-chart-improved.svg.png" alt="">
+<img src="/assets/JS/Maurer_rose/Rose-rhodonea-curve-7x9-chart-improved.svg.png" alt="">
 
 The Rose itself is red and "Maurer" part is blue. A Maurer rose of the rose r = sin(nθ) consists of the 360 lines successively connecting the above 361 points. Thus a Maurer rose is a polygonal curve with vertices on a rose. "maurer" parameter defines an angle between start of walk (first line) and next step (next line). The first line starts at coordinates (0,0) and there the final line ends.
 
@@ -58,7 +58,7 @@ Select maurer: <input type="text" name="" value="71" id="maurer">
 </div>
 
 
-<script src="{{ site.url }}/assets/JS/Maurer_rose/main.min.js"></script>
+<script src="/assets/JS/Maurer_rose/main.min.js"></script>
 
 <style>
  button {

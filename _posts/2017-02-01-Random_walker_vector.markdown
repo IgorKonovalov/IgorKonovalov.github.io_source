@@ -11,7 +11,7 @@ Hey everyone! After yesterday attempt to code random walker, I thought it would 
 Take a look at it first, some explanation below:
 <canvas width="740px" height="600px" style="background-color: black"></canvas>
 <button id="stopB" class="button-primary">Stop</button>
-<script src="{{ site.url }}/assets/JS/Random_Walker_2/index.js"></script>
+<script src="/assets/JS/Random_Walker_2/index.js"></script>
 
 <style>
   @media screen and (max-width: 600px) {

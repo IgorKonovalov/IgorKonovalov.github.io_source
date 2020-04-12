@@ -26,4 +26,4 @@ Project inspired by [@beesandbombs](https://twitter.com/beesandbombs) and [@shif
 <br>
 [Source code](https://github.com/IgorKonovalov/Little_projects/tree/master/Maurer_Rose_Walker)
 
-<script src="{{ site.url }}/assets/JS/Maurer_rose_revisited/index.js"></script>
+<script src="/assets/JS/Maurer_rose_revisited/index.js"></script>

@@ -56,6 +56,6 @@ Offset:
 <div id="Figure"></div>
 <button id="download">Download SVG</button>
 
-<script src="{{ site.url }}/assets/JS/Random_Lines_In_Shape/main.min.js"></script>
+<script src="/assets/JS/Random_Lines_In_Shape/main.min.js"></script>
 
 [video]: https://www.youtube.com/watch?v=sJ6pMLp_IaI

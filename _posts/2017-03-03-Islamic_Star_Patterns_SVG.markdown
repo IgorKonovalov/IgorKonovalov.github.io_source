@@ -42,7 +42,7 @@ So enjoy, experiment and share your thoughts!
   <option value="hex">Hexagon</option>
 </select>
 
-<script src="{{ site.url }}/assets/JS/Islamic_Star_Patterns_SVG/main.js"></script>
+<script src="/assets/JS/Islamic_Star_Patterns_SVG/main.js"></script>
 
 <style>
 * {
